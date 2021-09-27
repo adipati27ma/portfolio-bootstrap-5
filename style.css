@@ -21,6 +21,13 @@ section {
   background-color: #e2edff;
 }
 
+.clue {
+  margin-left: 0.25rem;
+  font-size: 0.9rem;
+  color: #acacac;
+  font-weight: 500;
+}
+
 footer {
   margin-top: -2px;
 }
