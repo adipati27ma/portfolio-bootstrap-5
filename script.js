@@ -29,7 +29,7 @@ form.addEventListener('submit', (e) => {
       console.log('Success!', response);
       sendBtn.classList.toggle('d-none');
       loadingBtn.classList.toggle('d-none');
-      formAlert.classList.toggle('d-none');
+      formAlert.classList.add('d-none');
       formAlert.classList.remove('fade');
       form.reset();
     })
@@ -44,7 +44,7 @@ const closeAlertBtn = document.querySelector('.btn-close');
 closeAlertBtn.addEventListener('click', (e) => {
   formAlert.classList.add('fade');
   setTimeout(() => {
-    formAlert.classList.toggle('d-none');
+    formAlert.classList.remove('d-none');
   }, 500);
 });
 // End of Custom Animation
