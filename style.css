@@ -33,6 +33,19 @@ footer a:hover {
   opacity: .8;
 }
 
+/* Add for Custom Animation fadeout alert:(((( */
+/* karena kalo pake bawaan bootstrap, gabisa muncul lagi */
+.alert.alert-dismissible {
+  opacity: 1;
+  transition: .5s all;
+}
+
+.alert.alert-dismissible.fade {
+  opacity: 0;
+}
+
+/* End of Custom Animation */
+
 @media only screen and (max-width: 768px) {
   .about .content {
     text-align: center;

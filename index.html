@@ -180,20 +180,28 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-7">
-            <form action="" class="mb-3">
+            <div class="alert alert-success alert-dismissible show form-alert d-none" role="alert">
+              <strong>Success!</strong> Thank you, I will read it as soon as possible.
+              <button type="button" class="btn-close" aria-label="Close"></button>
+            </div>
+            <form action="" class="mb-3" name="portfolio-b5-contact-form">
               <div class="mb-3">
                 <label for="name" class="form-label">Full name</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name">
+                <input name="name" type="text" class="form-control" id="name" aria-describedby="name" required>
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email">
+                <input name="email" type="email" class="form-control" id="email" aria-describedby="email" required>
               </div>
               <div class="mb-3">
                 <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="3"></textarea>
+                <textarea name="message" class="form-control" id="message" rows="3" required></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-primary btn-send">Submit</button>
+              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
             </form>
           </div>
         </div>
