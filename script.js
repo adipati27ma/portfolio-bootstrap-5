@@ -1,3 +1,16 @@
+// AOS---
+const galleryImage = document.querySelectorAll('.gallery-img');
+galleryImage.forEach((img, i) => {
+  img.dataset.aos = 'fade-down';
+  img.dataset.aosDelay = i * 100;
+});
+
+AOS.init({
+  once: true,
+  duration: 800,
+});
+//  End of AOS---
+
 const nav = document.querySelector('ul.navbar-nav');
 const menuLists = document.querySelectorAll('a.nav-link');
 
