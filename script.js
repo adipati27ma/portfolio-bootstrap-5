@@ -11,6 +11,37 @@ AOS.init({
 });
 //  End of AOS---
 
+// GSAP---
+gsap.registerPlugin(TextPlugin);
+gsap.to('.jumbotron .lead', {
+  duration: 2.3,
+  delay: 1.5,
+  text: {
+    value: 'Marching Drummer | Programmer',
+  },
+});
+gsap.from('.jumbotron img', {
+  duration: 1.2,
+  rotateY: 360,
+  opacity: 0,
+});
+
+gsap.from('.navbar', {
+  duration: 1.3,
+  y: -100,
+  opacity: 0,
+  ease: 'bounce',
+});
+
+gsap.from('h1.display-4', {
+  duration: 0.7,
+  x: -50,
+  opacity: 0,
+  delay: 0.5,
+  ease: 'back',
+});
+// End of GSAP---
+
 const nav = document.querySelector('ul.navbar-nav');
 const menuLists = document.querySelectorAll('a.nav-link');
 
